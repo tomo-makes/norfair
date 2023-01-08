@@ -49,10 +49,10 @@ def _get_grid(size, w, h, polar=False):
 def draw_absolute_grid(
     frame: np.ndarray,
     coord_transformations: CoordinatesTransformation,
-    grid_size: int = 20,
-    radius: int = 2,
-    thickness: int = 1,
-    color: ColorType = Color.black,
+    grid_size: int = 40,
+    radius: int = 10,
+    thickness: int = 2,
+    color: ColorType = Color.blue,
     polar: bool = False,
 ):
     """
