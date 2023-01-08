@@ -243,6 +243,8 @@ def run():
             if args.mask_detections:
                 # create a mask of ones
                 mask = np.ones(frame.shape[:2], frame.dtype)
+                # mask fixed
+                mask[0:100, 1100:1280] = 0
                 # set to 0 all detections
                 for b in boxes:
                     i = b.astype(int)
